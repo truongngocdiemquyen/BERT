@@ -1,0 +1,6 @@
+bert_serving.client==1.10.0
+numpy==1.19.0
+flask==1.1.2
+pandas==0.24.0
+re==2.2.1
+bert_serving==0.0.1
