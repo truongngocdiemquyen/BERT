@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    min-height: 100%;
+    background: #75c6ec;
+}
+
+html {
+    height: 100%;
+}
+
+#logo {
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-height: 70%;
+    min-width: 450px;
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    /* border-radius: 30px; */
+    padding: 30px 40px;
+    min-height: 500px;
+    justify-content: center;
+}
+
+.input-form {
+    flex-direction: row;
+    display: flex;
+}

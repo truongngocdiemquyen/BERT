@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q&A</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="form">
+            <div id="logo" class="pb-3">
+                <img src="https://tuoitre.uit.edu.vn/wp-content/uploads/2015/07/logo-uit.png" alt="logo" width="60" height="50" />
+            </div>
+            <div class="title pb-3">
+                <h2 class="text-center">Q&A SYSTEM WITH BERT</h2>
+            </div>
+            <div class="input pb-2">
+                <form class="input-form" action="#" method="POST">
+                    <!-- Do not replace name="question" of the first input-->
+                    <input
+                        type="text"
+                        class="form-control mr-3"
+                        name="question"
+                        size="50"
+                        placeholder="Vui lòng đặt câu hỏi"
+                    />
+                    <input type="submit" class="btn btn-primary" value="Tìm kiếm" />
+                </form>
+            </div>
+            <div class="output">
+                <!-- Do not replace {{ element }} -->
+                <p class="pb-3" style="font-size: 13px;">{{ time }}</p>
+                <p><strong>{{ qes }}</strong></p>
+                <p><strong>{{ res }}<strong></p>
+            </div>
+        </div>
+    </body>
+    <style>
+        body {
+            display: flex;
+            min-height: 100%;
+            background: #75c6ec;
+            }
+
+        html {
+            height: 100%;
+            }
+
+        #logo {
+        margin: 0 auto;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+    width: 60%;
+    min-height: 70%;
+    min-width: 450px;
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    /* border-radius: 30px; */
+    padding: 30px 40px;
+    min-height: 500px;
+    justify-content: center;
+}
+
+.input-form {
+    flex-direction: row;
+    display: flex;
+}
+    </style>
+</html>
